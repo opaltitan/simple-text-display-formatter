@@ -1,0 +1,25 @@
+{
+  "name": "simple-text-display-formatter",
+  "version": "0.1.0",
+  "description": "Simple Text Display Formatter",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "/build"
+  ],
+  "scripts": {
+    "copy-files": "copyfiles -u 1 src/models/**/*.d.ts build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.172",
+    "typescript": "4.3.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,7 @@
+export enum DISPLAY_FORMAT_TYPE {
+  TEXT,
+  DATE,
+  NUMBER,
+  DOLLAR,
+  PERCENT
+}
