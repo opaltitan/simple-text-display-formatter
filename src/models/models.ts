@@ -1,7 +1,7 @@
 export enum DISPLAY_FORMAT_TYPE {
-  TEXT,
-  DATE,
-  NUMBER,
-  DOLLAR,
-  PERCENT
-}
+  TEXT = 'TEXT',
+  DATE = 'DATE',
+  NUMBER = 'NUMBER',
+  DOLLAR = 'DOLLAR',
+  PERCENT = 'PERCENT'
+};
