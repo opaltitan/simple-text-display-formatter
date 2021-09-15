@@ -1,5 +1,4 @@
-import { DISPLAY_FORMAT_TYPE } from './models/models';
+import './models/models';
 export declare namespace DataFormatter {
-    const FORMAT_TYPE: typeof DISPLAY_FORMAT_TYPE;
-    const format: (data: string | number | Date, formatType: DISPLAY_FORMAT_TYPE, numberFormat?: import("./data-formatter").DISPLAY_NUMBER_FORMATS | undefined) => string | number | Date;
+    const format: (data: string | number | Date, formatType: import("./models/models").DISPLAY_FORMAT_TYPE, numberFormat?: import("./data-formatter").DISPLAY_NUMBER_FORMATS | undefined) => string | number | Date;
 }
