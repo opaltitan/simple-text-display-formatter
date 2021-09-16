@@ -1,4 +1,16 @@
-import './models/models';
 export declare namespace DataFormatter {
-    const format: (data: string | number | Date, formatType: import("./models/models").DISPLAY_FORMAT_TYPE, numberFormat?: import("./data-formatter").DISPLAY_NUMBER_FORMATS | undefined) => string | number | Date;
+    enum DISPLAY_FORMAT_TYPE {
+        TEXT = "TEXT",
+        DATE = "DATE",
+        NUMBER = "NUMBER",
+        DOLLAR = "DOLLAR",
+        PERCENT = "PERCENT"
+    }
+    enum DISPLAY_NUMBER_FORMATS {
+        NONE = "NONE",
+        THOUSANDS = "THOUSANDS",
+        MILLIONS = "MILLIONS",
+        BILLIONS = "BILLIONS"
+    }
+    const format: (data: string | number | Date, formatType: DISPLAY_FORMAT_TYPE, numberFormat?: DISPLAY_NUMBER_FORMATS | undefined) => string | number | Date;
 }

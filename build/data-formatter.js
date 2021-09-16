@@ -1,18 +1,11 @@
 var _a;
-import { DISPLAY_FORMAT_TYPE } from './models/models';
+import { DISPLAY_FORMAT_TYPE, DISPLAY_NUMBER_FORMATS } from './models/models';
 var formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
 });
-export var DISPLAY_NUMBER_FORMATS;
-(function (DISPLAY_NUMBER_FORMATS) {
-    DISPLAY_NUMBER_FORMATS["NONE"] = "NONE";
-    DISPLAY_NUMBER_FORMATS["THOUSANDS"] = "THOUSANDS";
-    DISPLAY_NUMBER_FORMATS["MILLIONS"] = "MILLIONS";
-    DISPLAY_NUMBER_FORMATS["BILLIONS"] = "BILLIONS";
-})(DISPLAY_NUMBER_FORMATS || (DISPLAY_NUMBER_FORMATS = {}));
 export var numberFormatMapping = (_a = {},
     _a[DISPLAY_NUMBER_FORMATS.NONE] = 1,
     _a[DISPLAY_NUMBER_FORMATS.THOUSANDS] = 1000,

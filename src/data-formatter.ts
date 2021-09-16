@@ -1,4 +1,4 @@
-import { DISPLAY_FORMAT_TYPE } from './models/models';
+import { DISPLAY_FORMAT_TYPE, DISPLAY_NUMBER_FORMATS } from './models/models';
 
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -7,13 +7,6 @@ const formatter = new Intl.NumberFormat('en-US', {
   minimumFractionDigits: 2,
   maximumFractionDigits: 2,
 });
-
-export enum DISPLAY_NUMBER_FORMATS {
-  NONE = 'NONE',
-  THOUSANDS = 'THOUSANDS',
-  MILLIONS = 'MILLIONS',
-  BILLIONS = 'BILLIONS'
-}
 
 export const numberFormatMapping = {
   [DISPLAY_NUMBER_FORMATS.NONE]: 1,
@@ -24,8 +17,8 @@ export const numberFormatMapping = {
 
 export const formatData = (
   data: string | number | Date,
-  formatType: DISPLAY_FORMAT_TYPE,
-  numberFormat?: DISPLAY_NUMBER_FORMATS
+  formatType: string,
+  numberFormat?: string
 ): string | number | Date => {
   if (!data) {
     return '';
