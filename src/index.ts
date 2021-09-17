@@ -16,7 +16,11 @@ export namespace DataFormatter {
     BILLIONS = 'BILLIONS'
   }
 
-  export const format = (
+  export const format: (
+    data: string | number | Date,
+    formatType: DISPLAY_FORMAT_TYPE,
+    numberFormat?: DISPLAY_NUMBER_FORMATS
+  ) => string = (
     data: string | number | Date,
     formatType: DISPLAY_FORMAT_TYPE,
     numberFormat?: DISPLAY_NUMBER_FORMATS

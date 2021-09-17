@@ -19,7 +19,7 @@ export const formatData = (
   data: string | number | Date,
   formatType: string,
   numberFormat?: string
-): string | number | Date => {
+): string => {
   if (!data) {
     return '';
   }
@@ -41,6 +41,6 @@ export const formatData = (
       return `${year}-${month}-${day}`;
     case DISPLAY_FORMAT_TYPE.TEXT:
     default:
-      return data;
+      return data.toString();
   }
 };

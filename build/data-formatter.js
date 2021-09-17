@@ -33,6 +33,6 @@ export var formatData = function (data, formatType, numberFormat) {
             return year + "-" + month + "-" + day;
         case DISPLAY_FORMAT_TYPE.TEXT:
         default:
-            return data;
+            return data.toString();
     }
 };
