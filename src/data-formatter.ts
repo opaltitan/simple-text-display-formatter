@@ -35,7 +35,7 @@ export const formatData = (
       const year = dataDate.getFullYear();
       const rawMonth = dataDate.getMonth() + 1;
       const month = rawMonth < 10 ? `0${rawMonth}` : rawMonth.toString();
-      const rawDay = dataDate.getDate();
+      const rawDay = dataDate.getDate() + 1;
       const day = rawDay < 10 ? `0${rawDay}` : rawDay.toString();
 
       return `${year}-${month}-${day}`;
