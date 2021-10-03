@@ -1,6 +1,6 @@
 {
   "name": "simple-text-display-formatter",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Simple Text Display Formatter",
   "main": "build/index.js",
   "types": "build/index.d.ts",
